@@ -10,7 +10,7 @@
 > 3. **📦 Shaded Fat JAR Size Gate:** Fat JAR size must be `< 75 MB` (Target: 50MB–65MB). If `> 100MB`, stop and inspect dependency tree (`mvn dependency:tree`).
 > 4. **🪟 Windows Setup EXE:** Output standard `Prism-[Tool-Name]-Setup.exe`, embedded 64-bit JRE 17/21, total installer `< 135 MB`.
 > 5. **🍎 macOS DMG Package:** Install4j project preserved in Obsidian vault (`Obsidian-Work/Package Maker/Install4j/`), output to `~/Downloads/`.
-> 6. **🔍 Full Master Checklist:** [Pre-Packaging Checklist](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/packaging/pre-packaging-checklist.md) & [Developer KT Handover Rulebook](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/engineering/dev-kt-handover-rulebook.md).
+> 6. **🔍 Full Master Rulebook:** [Desktop Packaging Master Rulebook (SSOT)](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/packaging/desktop-packaging-master-rulebook.md) & [Developer KT Handover Rulebook](file:///Users/akashsahu.blue/Documents/Akas/software-selling-platform/docs/rules/engineering/dev-kt-handover-rulebook.md).
 <!-- SSOT_RULES_HEADER_END -->
 
 You must read `GEMINI.md` in the project root before performing any task. It contains project overview, build commands, architecture, file structure, known issues, and other critical context for working on this codebase.

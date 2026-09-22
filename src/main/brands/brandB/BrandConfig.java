@@ -26,7 +26,10 @@ public final class BrandConfig {
             + (COMPANY_NAME + "-" + TOOL_NAME).toLowerCase().replace(" ", "-").replace("/", "-").replace("\\", "-");
 
     // License Key Validation Pattern
-    public static final String LICENSE_KEY_PATTERN = "^PSTB-ELITE-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$";
+    public static final String LICENSE_KEY_PATTERN =
+        "^([A-Z0-9]{3,8})-(STANDARD|BUSINESS|ELITE|ENTERPRISE|PRO|TECH|ADMIN|PERSONAL)-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$|" +
+        "^DMP-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$|" +
+        "^([A-Z0-9]{3,8})-[A-Z0-9]+-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$";
     public static final String LICENSE_KEY_FORMAT_HINT = "PSTB-ELITE-XXXX-XXXX-XXXX";
 
     // About Dialog Texts

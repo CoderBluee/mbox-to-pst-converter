@@ -12,7 +12,7 @@ public final class BrandConfig {
     public static final String HOME_PAGE_URL = "https://www.mboxconverter.com";
     public static final String SUPPORT_URL = "https://www.mboxconverter.com/support";
     public static final String UPGRADE_URL = "https://www.mboxconverter.com/upgrade";
-    public static final String LICENSE_API_URL = "http://localhost:8080/api/license/activate";
+    public static final String LICENSE_API_URL = "https://api.prismmigration.com/api/license/activate?siteId=brandA";
     public static final String FAQ_URL = "https://www.mboxconverter.com/faq";
     public static final String PRIVACY_POLICY_URL = "https://www.mboxconverter.com/privacy-policy";
     public static final String TERMS_OF_SERVICE_URL = "https://www.mboxconverter.com/terms-of-service";
@@ -25,7 +25,10 @@ public final class BrandConfig {
             + (COMPANY_NAME + "-" + TOOL_NAME).toLowerCase().replace(" ", "-").replace("/", "-").replace("\\", "-");
 
     // License Key Validation Pattern
-    public static final String LICENSE_KEY_PATTERN = "^MBOX-ELITE-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$";
+    public static final String LICENSE_KEY_PATTERN =
+        "^([A-Z0-9]{3,8})-(STANDARD|BUSINESS|ELITE|ENTERPRISE|PRO|TECH|ADMIN|PERSONAL)-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$|" +
+        "^DMP-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$|" +
+        "^([A-Z0-9]{3,8})-[A-Z0-9]+-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$";
     public static final String LICENSE_KEY_FORMAT_HINT = "MBOX-ELITE-XXXX-XXXX-XXXX";
 
     // About Dialog Texts
